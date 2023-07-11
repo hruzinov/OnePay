@@ -1,7 +1,4 @@
 //
-//  OnePayApp.swift
-//  OnePay
-//
 //  Created by Evhen Gruzinov on 11.07.2023.
 //
 
