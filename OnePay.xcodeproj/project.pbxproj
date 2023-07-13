@@ -13,6 +13,7 @@
 		494AD8882A5D5FDD00E5D051 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 494AD8872A5D5FDD00E5D051 /* Preview Assets.xcassets */; };
 		494AD8912A5D604F00E5D051 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 494AD8902A5D604F00E5D051 /* README.md */; };
 		494AD8932A5D611A00E5D051 /* License.md in Resources */ = {isa = PBXBuildFile; fileRef = 494AD8922A5D611A00E5D051 /* License.md */; };
+		49E641952A5DE4860081290B /* CardScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E641942A5DE4860081290B /* CardScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		494AD8872A5D5FDD00E5D051 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		494AD8902A5D604F00E5D051 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		494AD8922A5D611A00E5D051 /* License.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = License.md; sourceTree = "<group>"; };
+		49E641942A5DE4860081290B /* CardScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,12 +60,11 @@
 		494AD87E2A5D5FDA00E5D051 /* OnePay */ = {
 			isa = PBXGroup;
 			children = (
+				49FABD642A5D7CF1006E0DDC /* Assets */,
 				494AD88F2A5D5FFE00E5D051 /* Views */,
 				494AD88E2A5D5FF100E5D051 /* Functions */,
 				494AD87F2A5D5FDA00E5D051 /* OnePayApp.swift */,
-				494AD8832A5D5FDD00E5D051 /* Assets.xcassets */,
 				494AD8852A5D5FDD00E5D051 /* OnePay.entitlements */,
-				494AD8862A5D5FDD00E5D051 /* Preview Content */,
 			);
 			path = OnePay;
 			sourceTree = "<group>";
@@ -87,8 +88,18 @@
 			isa = PBXGroup;
 			children = (
 				494AD8812A5D5FDA00E5D051 /* ContentView.swift */,
+				49E641942A5DE4860081290B /* CardScreenView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		49FABD642A5D7CF1006E0DDC /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				494AD8832A5D5FDD00E5D051 /* Assets.xcassets */,
+				494AD8862A5D5FDD00E5D051 /* Preview Content */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +176,7 @@
 			files = (
 				494AD8822A5D5FDA00E5D051 /* ContentView.swift in Sources */,
 				494AD8802A5D5FDA00E5D051 /* OnePayApp.swift in Sources */,
+				49E641952A5DE4860081290B /* CardScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,12 +305,13 @@
 				CODE_SIGN_ENTITLEMENTS = OnePay/OnePay.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"OnePay/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"OnePay/Assets/Preview Content\"";
 				DEVELOPMENT_TEAM = G4PV26QJD2;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = 1Pay;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -309,16 +322,17 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gruzinov.OnePay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -333,12 +347,13 @@
 				CODE_SIGN_ENTITLEMENTS = OnePay/OnePay.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"OnePay/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"OnePay/Assets/Preview Content\"";
 				DEVELOPMENT_TEAM = G4PV26QJD2;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = 1Pay;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -349,16 +364,17 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gruzinov.OnePay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
