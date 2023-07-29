@@ -16,14 +16,14 @@ Bank for those who value their time and like minimalism in everything. Manage yo
 - Design
 
 - Main functionality:
-
-- Main screen
-
-- Transfer money
-
-- Receive money
-
-- Payments
+  
+  - Transfer money
+  
+  - Receive money
+  
+  - Payments
+  
+  - Transaction info
 
 - New cards
 

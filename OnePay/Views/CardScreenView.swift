@@ -24,66 +24,7 @@ struct CardScreenView: View {
 
                 ScrollView {
                     // Cards
-                    ZStack {
-                        Rectangle()
-                            .fill(LinearGradient(colors: [.yellow, .orange, .red, .purple, .blue], startPoint: .topLeading, endPoint: .bottomTrailing))
-                        VStack {
-                            HStack {
-                                Text("Debit")
-                                    .padding(.horizontal, 15)
-                                    .font(.headline)
-                                Spacer()
-                                Image(.visaLogoWhite)
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(height: 66)
-                            }
-
-                            HStack {
-                                Text("12 345.67")
-                                    .font(.title2)
-                                    .bold()
-                                Text("USD")
-                                    .opacity(0.6)
-                                    .bold()
-                                    .font(.title2)
-                                Spacer()
-                            }
-                            .padding(.horizontal, 15)
-                            .padding(.bottom, 10)
-
-                            Spacer()
-                            
-                            HStack {
-                                Text("Holder Name")
-                                    .font(.headline)
-                                Spacer()
-                            }
-                            .padding(.horizontal, 15)
-                            
-                            ZStack {
-                                Rectangle()
-                                    .frame(height: 55)
-                                HStack {
-                                    Text("1234 5678 9012 3456")
-                                    Spacer()
-                                    Text("02/29")
-                                    Spacer()
-                                    Text("***")
-                                }
-                                .padding(.horizontal, 15)
-                                .foregroundStyle(.white)
-                                .font(.subheadline)
-                                .bold()
-                            }
-                        }
-                    }
-                    .frame(
-                        width: UIScreen.main.bounds.width * 0.9,
-                        height: UIScreen.main.bounds.width * 0.5
-                    )
-                    .padding(.vertical, 10)
-                    .padding(.bottom, 40)
+                    CardsUIView()
 
                     // Buttons
                     HStack {
@@ -161,7 +102,7 @@ struct CardScreenView: View {
                     // Transactions
                     VStack {
                         HStack {
-                            Text("Last Transaction")
+                            Text("Last Transactions")
                                 .font(.headline)
                                 .bold()
                             Spacer()
@@ -170,47 +111,29 @@ struct CardScreenView: View {
                                 .font(.subheadline)
                         }
 
-                        HStack {
-                            Text("Today")
-                                .foregroundStyle(.gray)
-                                .bold()
-                            Spacer()
-                            VStack { Divider() }
-                        }
-                        .padding(.top, 5)
-                        .padding(.bottom, 15)
-
-                        HStack {
-                            Image(systemName: "apple.logo")
-                                .font(.title2)
-                                .padding(.horizontal, 15)
-                                .background {
-                                    Circle()
-                                        .fill(Color(red: 0.8, green: 0.8, blue: 0.8))
-                                        .frame(width: 50, height: 50)
+                        ForEach(Transaction.randomExampleDict(10).sorted(by: {$0.key > $1.key}), id: \.key) { date, transactionsArray in
+                            VStack {
+                                HStack {
+                                    Text(date == Date.now.dateString() ? "Today" : date)
+                                        .foregroundStyle(.gray)
+                                        .bold()
+                                    Spacer()
+                                    VStack { Divider() }
                                 }
-                            VStack(spacing: 5) {
-                                Text("Apple Store")
-                                    .font(.headline)
-                                Text("11:45 • Pending")
-                                    .font(.caption)
-                                    .bold()
+                                .padding(.vertical, 5)
+
+                                ForEach(transactionsArray) { transaction in
+                                    TransactionListUIView(transaction: transaction)
+                                        .padding(.bottom, 5)
+                                }
                             }
-                            Spacer()
-                            HStack(spacing: 3) {
-                                Text("-120.45")
-                                Text("USD")
-                                    .foregroundStyle(.gray)
-                            }
-                            .font(.subheadline)
-                            .bold()
+                            .padding(.bottom, 5)
                         }
-
                     }
-
                 }
+                .scrollIndicators(.hidden)
             }
-            .padding(.horizontal, 25)
+            .padding(.horizontal, 10)
         }
     }
 }

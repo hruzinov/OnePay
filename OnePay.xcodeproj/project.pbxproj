@@ -13,7 +13,12 @@
 		494AD8882A5D5FDD00E5D051 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 494AD8872A5D5FDD00E5D051 /* Preview Assets.xcassets */; };
 		494AD8912A5D604F00E5D051 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 494AD8902A5D604F00E5D051 /* README.md */; };
 		494AD8932A5D611A00E5D051 /* License.md in Resources */ = {isa = PBXBuildFile; fileRef = 494AD8922A5D611A00E5D051 /* License.md */; };
+		496CBD392A63154100DAE98D /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496CBD382A63154100DAE98D /* Transaction.swift */; };
+		49BDBE3F2A75390500009124 /* ExampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BDBE3E2A75390400009124 /* ExampleData.swift */; };
+		49BDBE422A753A7900009124 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BDBE412A753A7900009124 /* Data+Extensions.swift */; };
 		49E641952A5DE4860081290B /* CardScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E641942A5DE4860081290B /* CardScreenView.swift */; };
+		49F37E892A75352200875139 /* CardsUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F37E882A75352200875139 /* CardsUIView.swift */; };
+		49F37E8B2A75357600875139 /* TransactionListUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F37E8A2A75357600875139 /* TransactionListUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +30,12 @@
 		494AD8872A5D5FDD00E5D051 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		494AD8902A5D604F00E5D051 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		494AD8922A5D611A00E5D051 /* License.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = License.md; sourceTree = "<group>"; };
+		496CBD382A63154100DAE98D /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		49BDBE3E2A75390400009124 /* ExampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleData.swift; sourceTree = "<group>"; };
+		49BDBE412A753A7900009124 /* Data+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
 		49E641942A5DE4860081290B /* CardScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardScreenView.swift; sourceTree = "<group>"; };
+		49F37E882A75352200875139 /* CardsUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsUIView.swift; sourceTree = "<group>"; };
+		49F37E8A2A75357600875139 /* TransactionListUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +70,9 @@
 		494AD87E2A5D5FDA00E5D051 /* OnePay */ = {
 			isa = PBXGroup;
 			children = (
-				49FABD642A5D7CF1006E0DDC /* Assets */,
+				49BDBE402A753A6D00009124 /* Extentions */,
+				496CBD372A63152E00DAE98D /* Models */,
+				49FABD642A5D7CF1006E0DDC /* Other */,
 				494AD88F2A5D5FFE00E5D051 /* Views */,
 				494AD88E2A5D5FF100E5D051 /* Functions */,
 				494AD87F2A5D5FDA00E5D051 /* OnePayApp.swift */,
@@ -73,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				494AD8872A5D5FDD00E5D051 /* Preview Assets.xcassets */,
+				49BDBE3E2A75390400009124 /* ExampleData.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -89,17 +102,35 @@
 			children = (
 				494AD8812A5D5FDA00E5D051 /* ContentView.swift */,
 				49E641942A5DE4860081290B /* CardScreenView.swift */,
+				49F37E882A75352200875139 /* CardsUIView.swift */,
+				49F37E8A2A75357600875139 /* TransactionListUIView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		49FABD642A5D7CF1006E0DDC /* Assets */ = {
+		496CBD372A63152E00DAE98D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				496CBD382A63154100DAE98D /* Transaction.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		49BDBE402A753A6D00009124 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				49BDBE412A753A7900009124 /* Data+Extensions.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		49FABD642A5D7CF1006E0DDC /* Other */ = {
 			isa = PBXGroup;
 			children = (
 				494AD8832A5D5FDD00E5D051 /* Assets.xcassets */,
 				494AD8862A5D5FDD00E5D051 /* Preview Content */,
 			);
-			path = Assets;
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,8 +205,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49BDBE3F2A75390500009124 /* ExampleData.swift in Sources */,
 				494AD8822A5D5FDA00E5D051 /* ContentView.swift in Sources */,
+				49F37E8B2A75357600875139 /* TransactionListUIView.swift in Sources */,
+				49F37E892A75352200875139 /* CardsUIView.swift in Sources */,
 				494AD8802A5D5FDA00E5D051 /* OnePayApp.swift in Sources */,
+				49BDBE422A753A7900009124 /* Data+Extensions.swift in Sources */,
+				496CBD392A63154100DAE98D /* Transaction.swift in Sources */,
 				49E641952A5DE4860081290B /* CardScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,6 +253,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -278,6 +315,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -305,7 +343,8 @@
 				CODE_SIGN_ENTITLEMENTS = OnePay/OnePay.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"OnePay/Assets/Preview Content\"";
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"OnePay/Other/Preview Content\"";
 				DEVELOPMENT_TEAM = G4PV26QJD2;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -332,7 +371,7 @@
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -347,7 +386,8 @@
 				CODE_SIGN_ENTITLEMENTS = OnePay/OnePay.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"OnePay/Assets/Preview Content\"";
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"OnePay/Other/Preview Content\"";
 				DEVELOPMENT_TEAM = G4PV26QJD2;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -374,7 +414,7 @@
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
