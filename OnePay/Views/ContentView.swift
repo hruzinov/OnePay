@@ -6,10 +6,10 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        TabView {
+//        TabView {
             CardScreenView()
-                .tabItem { Label("Card", systemImage: "creditcard") }
-        }
+//                .tabItem { Label("Card", systemImage: "creditcard") }
+//        }
     }
 }
 

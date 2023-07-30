@@ -5,7 +5,7 @@
 import Foundation
 
 let exampleStartingDate = Date.parse("2021/1/1")
-let exampleEndingDate = Date.parse("2024/12/31")
+let exampleEndingDate = Date.now
 
 let exampleShopNames = [
     "The Crafted Corner",
@@ -42,12 +42,11 @@ extension Transaction {
             sum: Int.random(in: -1000000...1000000)
         )
     }
-    static func randomExampleDict(_ count: Int) -> [String:[Transaction]] {
+    static func randomExampleArr(_ count: Int) -> [Transaction] {
         var array = [Transaction]()
         for _ in 1...count {
             array.append(randomExample())
         }
-        let dictionary = Dictionary(grouping: array.sorted(by: {$0.date > $1.date}), by: { $0.date.dateString() })
-        return dictionary
+        return array.sorted(by: {$0.date > $1.date})
     }
 }

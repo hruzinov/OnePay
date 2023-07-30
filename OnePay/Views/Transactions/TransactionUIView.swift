@@ -4,7 +4,7 @@
 
 import SwiftUI
 
-struct TransactionListUIView: View {
+struct TransactionUIView: View {
     @State var transaction: Transaction
 
     var body: some View {
@@ -45,5 +45,5 @@ struct TransactionListUIView: View {
 }
 
 #Preview {
-    TransactionListUIView(transaction: Transaction.randomExample())
+    TransactionUIView(transaction: Transaction.randomExample())
 }

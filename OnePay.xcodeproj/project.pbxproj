@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4932434D2A75761C005D02F7 /* TransactionsListUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4932434C2A75761C005D02F7 /* TransactionsListUIView.swift */; };
+		4932434F2A757758005D02F7 /* TransactionsListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4932434E2A757758005D02F7 /* TransactionsListScreen.swift */; };
+		493243512A758708005D02F7 /* TransferMoneyScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493243502A758708005D02F7 /* TransferMoneyScreen.swift */; };
 		494AD8802A5D5FDA00E5D051 /* OnePayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494AD87F2A5D5FDA00E5D051 /* OnePayApp.swift */; };
 		494AD8822A5D5FDA00E5D051 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494AD8812A5D5FDA00E5D051 /* ContentView.swift */; };
 		494AD8842A5D5FDD00E5D051 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 494AD8832A5D5FDD00E5D051 /* Assets.xcassets */; };
 		494AD8882A5D5FDD00E5D051 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 494AD8872A5D5FDD00E5D051 /* Preview Assets.xcassets */; };
 		494AD8912A5D604F00E5D051 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 494AD8902A5D604F00E5D051 /* README.md */; };
 		494AD8932A5D611A00E5D051 /* License.md in Resources */ = {isa = PBXBuildFile; fileRef = 494AD8922A5D611A00E5D051 /* License.md */; };
+		49699A252A768AC4002C315D /* CardScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49699A232A768AC4002C315D /* CardScreenView.swift */; };
+		49699A262A768AC4002C315D /* CardsUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49699A242A768AC4002C315D /* CardsUIView.swift */; };
 		496CBD392A63154100DAE98D /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496CBD382A63154100DAE98D /* Transaction.swift */; };
 		49BDBE3F2A75390500009124 /* ExampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BDBE3E2A75390400009124 /* ExampleData.swift */; };
 		49BDBE422A753A7900009124 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BDBE412A753A7900009124 /* Data+Extensions.swift */; };
-		49E641952A5DE4860081290B /* CardScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E641942A5DE4860081290B /* CardScreenView.swift */; };
-		49F37E892A75352200875139 /* CardsUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F37E882A75352200875139 /* CardsUIView.swift */; };
-		49F37E8B2A75357600875139 /* TransactionListUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F37E8A2A75357600875139 /* TransactionListUIView.swift */; };
+		49F37E8B2A75357600875139 /* TransactionUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F37E8A2A75357600875139 /* TransactionUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4932434C2A75761C005D02F7 /* TransactionsListUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListUIView.swift; sourceTree = "<group>"; };
+		4932434E2A757758005D02F7 /* TransactionsListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListScreen.swift; sourceTree = "<group>"; };
+		493243502A758708005D02F7 /* TransferMoneyScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferMoneyScreen.swift; sourceTree = "<group>"; };
 		494AD87C2A5D5FDA00E5D051 /* OnePay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnePay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		494AD87F2A5D5FDA00E5D051 /* OnePayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnePayApp.swift; sourceTree = "<group>"; };
 		494AD8812A5D5FDA00E5D051 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -30,12 +36,12 @@
 		494AD8872A5D5FDD00E5D051 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		494AD8902A5D604F00E5D051 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		494AD8922A5D611A00E5D051 /* License.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = License.md; sourceTree = "<group>"; };
+		49699A232A768AC4002C315D /* CardScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardScreenView.swift; sourceTree = "<group>"; };
+		49699A242A768AC4002C315D /* CardsUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsUIView.swift; sourceTree = "<group>"; };
 		496CBD382A63154100DAE98D /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		49BDBE3E2A75390400009124 /* ExampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleData.swift; sourceTree = "<group>"; };
 		49BDBE412A753A7900009124 /* Data+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
-		49E641942A5DE4860081290B /* CardScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardScreenView.swift; sourceTree = "<group>"; };
-		49F37E882A75352200875139 /* CardsUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsUIView.swift; sourceTree = "<group>"; };
-		49F37E8A2A75357600875139 /* TransactionListUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListUIView.swift; sourceTree = "<group>"; };
+		49F37E8A2A75357600875139 /* TransactionUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +55,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4932434B2A7575F7005D02F7 /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				49F37E8A2A75357600875139 /* TransactionUIView.swift */,
+				4932434C2A75761C005D02F7 /* TransactionsListUIView.swift */,
+				4932434E2A757758005D02F7 /* TransactionsListScreen.swift */,
+			);
+			path = Transactions;
+			sourceTree = "<group>";
+		};
 		494AD8732A5D5FDA00E5D051 = {
 			isa = PBXGroup;
 			children = (
@@ -100,12 +116,21 @@
 		494AD88F2A5D5FFE00E5D051 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				49699A222A768AC4002C315D /* Cards */,
+				4932434B2A7575F7005D02F7 /* Transactions */,
 				494AD8812A5D5FDA00E5D051 /* ContentView.swift */,
-				49E641942A5DE4860081290B /* CardScreenView.swift */,
-				49F37E882A75352200875139 /* CardsUIView.swift */,
-				49F37E8A2A75357600875139 /* TransactionListUIView.swift */,
+				493243502A758708005D02F7 /* TransferMoneyScreen.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		49699A222A768AC4002C315D /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				49699A232A768AC4002C315D /* CardScreenView.swift */,
+				49699A242A768AC4002C315D /* CardsUIView.swift */,
+			);
+			path = Cards;
 			sourceTree = "<group>";
 		};
 		496CBD372A63152E00DAE98D /* Models */ = {
@@ -205,14 +230,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4932434F2A757758005D02F7 /* TransactionsListScreen.swift in Sources */,
 				49BDBE3F2A75390500009124 /* ExampleData.swift in Sources */,
 				494AD8822A5D5FDA00E5D051 /* ContentView.swift in Sources */,
-				49F37E8B2A75357600875139 /* TransactionListUIView.swift in Sources */,
-				49F37E892A75352200875139 /* CardsUIView.swift in Sources */,
+				49F37E8B2A75357600875139 /* TransactionUIView.swift in Sources */,
+				4932434D2A75761C005D02F7 /* TransactionsListUIView.swift in Sources */,
 				494AD8802A5D5FDA00E5D051 /* OnePayApp.swift in Sources */,
+				49699A262A768AC4002C315D /* CardsUIView.swift in Sources */,
 				49BDBE422A753A7900009124 /* Data+Extensions.swift in Sources */,
 				496CBD392A63154100DAE98D /* Transaction.swift in Sources */,
-				49E641952A5DE4860081290B /* CardScreenView.swift in Sources */,
+				49699A252A768AC4002C315D /* CardScreenView.swift in Sources */,
+				493243512A758708005D02F7 /* TransferMoneyScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,7 +370,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = OnePay/OnePay.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 5;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"OnePay/Other/Preview Content\"";
 				DEVELOPMENT_TEAM = G4PV26QJD2;
@@ -365,7 +393,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 0.1;
+				MARKETING_VERSION = 0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gruzinov.OnePay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -385,7 +413,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = OnePay/OnePay.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 5;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"OnePay/Other/Preview Content\"";
 				DEVELOPMENT_TEAM = G4PV26QJD2;
@@ -408,7 +436,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 0.1;
+				MARKETING_VERSION = 0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gruzinov.OnePay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;

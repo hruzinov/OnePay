@@ -5,6 +5,8 @@
 import SwiftUI
 
 struct CardScreenView: View {
+    @State var transactions = Transaction.randomExampleArr(50)
+
     var body: some View {
         NavigationStack {
             VStack {
@@ -18,7 +20,8 @@ struct CardScreenView: View {
                     Image(systemName: "bell")
                         .font(.title3)
                 }
-                .padding(.top, 5)
+                .padding(.top, 10)
+                .padding(.horizontal, 10)
                 .padding(.bottom, 15)
                 .bold()
 
@@ -44,20 +47,24 @@ struct CardScreenView: View {
                                 .bold()
                         }
                         Spacer()
-                        VStack {
-                            Image(systemName: "arrow.up.right")
-                                .font(.title3)
-                                .background {
-                                    Circle()
-                                        .stroke(.black, lineWidth: 3)
-                                        .fill(.white)
-                                        .frame(width: 55, height: 55)
-                                }
-                                .padding(.bottom, 20)
-                            Spacer()
-                            Text("Pay or Send")
-                                .font(.subheadline)
-                                .bold()
+                        NavigationLink {
+                            TransferMoneyScreen()
+                        } label: {
+                            VStack {
+                                Image(systemName: "arrow.up.right")
+                                    .font(.title3)
+                                    .background {
+                                        Circle()
+                                            .stroke(.black, lineWidth: 3)
+                                            .fill(.white)
+                                            .frame(width: 55, height: 55)
+                                    }
+                                    .padding(.bottom, 20)
+                                Spacer()
+                                Text("Pay or Send")
+                                    .font(.subheadline)
+                                    .bold()
+                            }
                         }
                         Spacer()
                         VStack {
@@ -106,32 +113,18 @@ struct CardScreenView: View {
                                 .font(.headline)
                                 .bold()
                             Spacer()
-                            Text("View all")
-                                .foregroundStyle(.purple)
-                                .font(.subheadline)
-                        }
-
-                        ForEach(Transaction.randomExampleDict(10).sorted(by: {$0.key > $1.key}), id: \.key) { date, transactionsArray in
-                            VStack {
-                                HStack {
-                                    Text(date == Date.now.dateString() ? "Today" : date)
-                                        .foregroundStyle(.gray)
-                                        .bold()
-                                    Spacer()
-                                    VStack { Divider() }
-                                }
-                                .padding(.vertical, 5)
-
-                                ForEach(transactionsArray) { transaction in
-                                    TransactionListUIView(transaction: transaction)
-                                        .padding(.bottom, 5)
-                                }
+                            NavigationLink {
+                                TransactionsListScreen(transactions: transactions)
+                            } label: {
+                                Text("View all")
+                                    .foregroundStyle(.purple)
+                                    .font(.subheadline)
                             }
-                            .padding(.bottom, 5)
                         }
+                        
+                        TransactionsListUIView(transactions: transactions)
                     }
                 }
-                .scrollIndicators(.hidden)
             }
             .padding(.horizontal, 10)
         }

@@ -25,7 +25,7 @@ struct CardsUIView: View {
                     Text("12 345.67")
                         .font(.title2)
                         .bold()
-                    Text("USD")
+                    Text("EUR")
                         .opacity(0.6)
                         .bold()
                         .font(.title2)
